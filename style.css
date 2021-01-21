@@ -1,0 +1,528 @@
+body {
+	font-family: 'Fira Mono';
+  background-color: #FAFAFA;
+  padding-left: 10px;
+  padding-right:10px;
+  margin: 0px;
+}
+.navbar {
+  font-family: 'Fira Mono';
+  background-color: #FAFAFA;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: solid #D8D8D8 1px;
+  border-bottom: solid #D8D8D8 1px;
+  font-size: 1.333 em;
+  letter-spacing: 2px;
+}
+.navbar text {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: right;
+  text-decoration: none;
+  padding: 10px 12px;
+  margin-left: 11.5%;
+  margin-right: 37%;
+}
+.home {
+  float:left; 
+  margin-left: 11.5%; 
+  margin-right: 37%
+}
+.home a{
+  text-decoration: none;
+  color:#000000;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 12px;
+  letter-spacing: 1 rem;
+}
+
+.navbar a:hover {
+  color: black;
+  border-bottom: solid red 2px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 10%;
+  /*height: 1500px; /* Used in this example to enable scrolling */
+  margin-left: 11.5%;
+  margin-right: 11.5%;
+  margin-bottom: 11.5%;
+  line-height: 30px;
+  letter-spacing: 2px;
+  display: initial-block;
+  color: red;
+  border-bottom: solid red 2px;
+}
+.main p {
+  white-space: pre-wrap;
+  display: inline-block;
+}
+.title {
+  font-weight: bolder;
+  line-height: 30px;
+  border-bottom: solid #000000 2px;
+  margin-right: 3%;
+}
+.intro{
+  text-align: center;
+}
+.intro img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border:none;
+  margin:none;
+}
+.intro p, h1, h2, h3{
+  font-weight: bolder;
+  letter-spacing: 0px;
+}
+.intro a{
+  color: black;
+  padding-left:8px;
+}
+
+.footer {
+  background-color: #FAFAFA;
+  overflow: hidden;
+  position:fixed;
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: initial;
+  border-top: solid #D8D8D8 1px;
+  border-bottom: solid #D8D8D8 1px;
+  font-size: .75em;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.footer a{
+  text-decoration: none;
+  color:#000000;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    margin-top: 35%;
+  }
+  .navbar {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  .home {
+    margin-right: 25%;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .main {
+    margin-top: 34%;
+  }
+  .navbar {
+    font-size: .7rem;
+    letter-spacing: 0px;
+  }
+  .navbar a{
+    padding: 6px 8px;
+  }
+  .home{
+    padding: 6px 8px;
+    margin-right: 5%;
+    margin-left: 7%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .footer {
+  	position: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main {
+    margin-top: 34%;
+  }
+  .navbar {
+    font-size: .7rem;
+    letter-spacing: 0px;
+  }
+  .navbar a{
+    padding: 6px 8px;
+  }
+  .home{
+    padding: 6px 8px;
+    margin-right: 5%;
+    margin-left: 7%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .intro img {
+    width: 150px;
+    height: 150px;
+  }
+  .footer {
+  	position: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main {
+    margin-top: 29%;
+  }
+  .navbar {
+    font-size: .7rem;
+    letter-spacing: 0px;
+  }
+  .navbar a{
+    padding: 6px 8px;
+  }
+  .home{
+    padding: 6px 8px;
+    margin-right: 5%;
+    margin-left: 7%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .intro img {
+    width: 150px;
+    height: 150px;
+  }
+  .footer {
+  	position: none;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+.columnB {
+  float: left;
+  width: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*border:solid red 2px;
+   Should be removed. Only for demonstration */
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*border:solid red 2px;
+   Should be removed. Only for demonstration */
+}
+
+.columnA {
+  float: left;
+  width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*border:solid red 2px;
+   Should be removed. Only for demonstration */
+}
+
+.columnA img {
+  height: 220px;
+  width: 220px;
+  align-content: center;
+  border-radius: 50%;
+  border:dashed red 1px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.spacer {
+  margin-bottom: 200px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.logIn {
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-top: 100px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  display: initial-block;
+}
+.logIn h3{
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.333 em;
+  letter-spacing: 1px;
+}
+.logIn p{
+  line-height: 1.5rem;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.logIn a{
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signUp {
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-top: 20px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  display: initial-block;
+}
+.signUp h3{
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.333 em;
+  letter-spacing: 1px;
+}
+.signUp p{
+  line-height: 1.5rem;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.signUp a{
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #555555;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #55555F;
+}
+
+.edit {
+  display: none;
+}
+
+.wrap {
+  margin-left: 12.6%;
+  margin-top: 6%;
+  margin-right: 21%;
+  background-color: ;
+  color: black;
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+}
+.wrap p{
+  text-transform: uppercase;
+}
+.wrap h1{
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: black;
+  /*border-bottom: solid red 2px;*/
+  font-size: 1.4 em;
+  letter-spacing: 1.2px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.wrap h2{
+  line-height: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: black;
+  font-size: 1.2 em;
+  letter-spacing: 1.2px;
+}
+.wrap h3{
+  line-height: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: gray;
+  font-size: 1.2 em;
+  letter-spacing: 1.2px;
+}
+.wrap h4{
+  line-height: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: gray;
+  letter-spacing: 1.2px;
+}
+
+.wrap h5{
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: black;
+  border-bottom: solid gray 2px;
+  font-size: 1.4 em;
+  letter-spacing: 1.2px;
+  margin-top: 5px;
+}
+
+.courseBox{
+  border: dashed gray 2px;
+  padding: 20px;
+}
+.courseBox a{
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+}
+
+.courseBox a:hover {
+  color: red;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.buttonStudent {
+  background-color: white;
+  color: black;
+  border: 1.5px solid #555555;
+  width:32.5%;
+  padding:15px;
+  border-radius:2px;
+}
+
+.buttonStudent:hover {
+  background-color: #555555;
+  color: white;
+}
+.buttonTeacher {
+  background-color: white;
+  color: black;
+  border: 1.5px solid #555555;
+  width:24.3%;
+  padding:15px;
+  border-radius:2px;
+}
+
+.buttonTeacher:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.FeedA{
+  padding-left: 12.6%;
+  padding-top: 6%;
+  padding-right: 21%;
+  background-color: #ffffff;
+  color: black;
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+}
+.FeedB{
+  padding-left: 12.6%;
+  padding-top: 6%;
+  padding-right: 21%;
+  background-color:;
+  color: black;
+  font-family: 'PT Sans Narrow';
+  text-transform: uppercase;
+}
